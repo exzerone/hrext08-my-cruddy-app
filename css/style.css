@@ -13,8 +13,22 @@ state changing styling
 	FLEXBOX CONTAINER
 	guide: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 */
+
+.logo_container{
+	background-color:white;
+	display:flex;
+	flex-direction: column;
+}
+
 .container {
 	display: flex;
+	/* justify-content: center; */
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+	position : relative;
+	flex-direction:row;
+
 }
 
 /*
@@ -23,18 +37,12 @@ state changing styling
 table {
 	width: 400px;
 	margin-left: 30px;
+	margin-top:20px;
+	border:none;
 }
 
-table,
-td {
-    border: 1px solid #333;
-}
 
-thead,
-tfoot {
-    background-color: #333;
-    color: #fff;
-}
+
 
 /*
 	FORM STYLING 
@@ -48,7 +56,9 @@ div.form {
 
 label, input {
     margin-bottom: 10px;
-    width: 125px;
+	width: 125px;
+	border-radius: 4px;
+	border: 3px solid lightblue;
 }
 
 label {
@@ -60,4 +70,33 @@ label {
 
 button.button {
 	margin-right: 20px;
+}
+
+.title{
+	display:flex;
+	justify-content: center;
+}
+
+body{
+	background-color:#f6f6f6!important;
+}
+
+#statusLabel{
+	margin-top: 10px;
+	position : relative;
+	top:250px;
+	left:150px;	
+}
+
+element.style {
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+tr:hover{
+	background-color:beige;
+}
+
+table thead th{
+	color:rgba(39, 165, 39, 0.952);
 }

@@ -1,8 +1,9 @@
+
 var loadLocalStorage = function () {
 	var keys = Object.keys(localStorage)
 	var htmlString = '';
 	for (var i = 0; i < keys.length; i++) {
-		htmlString += `<tr><td>${keys[i]}</td><td>${localStorage[keys[i]]}</tr></tr>`;
+		htmlString += `<tr><td>${keys[i]}</td></tr></tr>`;
 	}
 	$('tbody').html(htmlString)
 };
@@ -73,11 +74,7 @@ $(document).ready(function () {
 
 });
 /*
-
-
-
 When an input element is given a name, that name becomes a property of the owning form element's HTMLFormElement.elements property. That means if you have an input whose name is set to guest and another whose name is hat-size, the following code can be used:
-
 let form = document.querySelector("form");
 let guestName = form.elements.guest;
 let hatSize = form.elements["hat-size"];

@@ -11,16 +11,24 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+	<div class='logo_container'>
+		<header id = 'top'>
+				<a id="logo">
+					<img class="stnd default-logo dark-version" alt="Home Cafe SF" src="https://bit.ly/2OGUyBh" srcset="https://bit.ly/2OGUyBh 1x, https://bit.ly/2OGUyBh 2x" style="display:block;margin-left:auto;height: 100px; "> 
+					<img class = 'coffeeLogo' src= 'https://bit.ly/2K1aYWq' style ="display:block; height:300px; margin-right:auto; height:250px; ">
+				</a>
+		</header>
+	</div>
 	<div class="container">
 		<form action="" method="" class="form">
 			<div class="form">
-				<label for="key">Enter key: </label>
+				<label for="key">Input Entry: </label>
 				<input type="text" name="key" id="key" required>
 			</div>
-			<div class="form">
+			<!-- <div class="form">
 				<label for="value">Enter value: </label>
 				<input type="text" name="value" id="value" required>
-			</div>
+			</div> -->
 			<div class="form">
 				<button class="button" id="btn-create" type="button">Create</button>
 				<button class="button" id="btn-update" type="button">Update</button>
@@ -28,20 +36,23 @@
 			</div>
 			<!-- clear button? -->
 		</form>	
-		<table>
+		<table cellspacing="0" cellpadding="0">
 			<thead>
-				<tr>
-					<th>Key</th>
-					<th>Value</th>
-				</tr>
+				<!--
+					<tr>
+						<th>Menu</th>
+						<th>Value</th>
+					</tr>
+				-->
 			</thead>
 			<tbody>
 				<tr>
-					<td>test key</td>
-					<td>test value</td>
+					<td>Your Input</td>
+					<!-- <td>test value</td> -->
 				</tr>
 			</tbody>
 		</table>
+		
 	</div>
 	<div id="statusLabel">Status:</div>
 
@@ -53,7 +64,12 @@
 
    corgi gif
    cowbell sound
-  -->
+	-->
+	
+<body></body>
+
+
+
 
 </body>
 </html>
