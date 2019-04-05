@@ -1,75 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-	<meta charset="UTF-8">
-	<title>HREXT08 R00lz!</title>
-	<script
-		src="https://code.jquery.com/jquery-3.3.1.js"
-		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-	<div class='logo_container'>
-		<header id = 'top'>
-				<a id="logo">
-					<img class="stnd default-logo dark-version" alt="Home Cafe SF" src="https://bit.ly/2OGUyBh" srcset="https://bit.ly/2OGUyBh 1x, https://bit.ly/2OGUyBh 2x" style="display:block;margin-left:auto;height: 100px; "> 
-					<img class = 'coffeeLogo' src= 'https://bit.ly/2K1aYWq' style ="display:block; height:300px; margin-right:auto; height:250px; ">
-				</a>
-		</header>
-	</div>
-	<div class="container">
-		<form action="" method="" class="form">
-			<div class="form">
-				<label for="key">Input Entry: </label>
-				<input type="text" name="key" id="key" required>
-			</div>
-			<!-- <div class="form">
-				<label for="value">Enter value: </label>
-				<input type="text" name="value" id="value" required>
-			</div> -->
-			<div class="form">
-				<button class="button" id="btn-create" type="button">Create</button>
-				<button class="button" id="btn-update" type="button">Update</button>
-				<button class="button" id="btn-delete" type="button">Delete</button>
-			</div>
-			<!-- clear button? -->
-		</form>	
-		<table cellspacing="0" cellpadding="0">
-			<thead>
-				<!--
-					<tr>
-						<th>Menu</th>
-						<th>Value</th>
-					</tr>
-				-->
-			</thead>
-			<tbody>
-				<tr>
-					<td>Your Input</td>
-					<!-- <td>test value</td> -->
-				</tr>
-			</tbody>
-		</table>
-		
-	</div>
-	<div id="statusLabel">Status:</div>
+  <!-- Mobile Specific Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="img/fav.png">
+  <!-- Author Meta -->
+  <meta name="author" content="codepixer">
+  <!-- Meta Description -->
+  <meta name="description" content="">
+  <!-- Meta Keyword -->
+  <meta name="keywords" content="">
+  <!-- meta character set -->
+  <meta charset="UTF-8">
+  <!-- Site Title -->
+  <title>Coffee</title>
 
-	<script src="app/app.js"></script>
-  <!--
-   table to view data
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+    <!--
+    CSS
+    ============================================= -->
+    <!-- <link rel="stylesheet" href="css/linearicons.css"> -->
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/magnific-popup.css"> -->
+    <link rel="stylesheet" href="css/nice-select.css">					
+    <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/owl.carousel.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="banner-area" id="home">	
+      <div class="container">
+        <div class="row fullscreen d-flex align-items-center justify-content-start">
+          <div class="banner-content col-lg-7">
+            <h6 class="text-white text-uppercase">Now you can feel the Energy</h6>
+            <h1>
+              Start your day fresh with
+              your favorite coffee				
+            </h1>
+            <!-- <a href="#" class="primary-btn text-uppercase">Buy Now</a> -->
+          </div>											
+        </div>
+      </div>
+    </section>
+  
+    <h1>Menu</h1>
+    <div id="container">
+      <form>
+        <div>
+          <label for="task_des">Item:</label>
+          <input id="task_des" type="text" />
+        </div>
+        <div>
+          <label for="task_state">Price $:</label>
+          <input id="task_state" type="text" />
+        </div>
+        <div>
+          <button id="save_task" type="button"> Enter Your Item</button>
+        </div>
+      </form>
+    </div>
+    <hr />
+    <div id="container">
+      <h2>Item List</h2>
+      <ul id="task_wrapper"></ul>
+    </div>
+    <script src="app.js"></script>
+  </body>
 
-   form for input for the crud operations
-
-   corgi gif
-   cowbell sound
-	-->
-	
-<body></body>
-
-
-
-
-</body>
 </html>
